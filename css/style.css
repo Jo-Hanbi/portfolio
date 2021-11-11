@@ -243,6 +243,100 @@ body{
   left: -4px;
 }
 
-.cont img{
+.cont>img{
 	width: 100vw;
+}
+.cont .cont_01>img{
+	width: 100vw;
+}
+
+.cont .cont_01{
+	/* position: absolute; */
+}
+
+.cont .cont_01 .diagram{
+	position: absolute;
+	top: 0;
+	left: 0;
+
+}
+.cont .cont_01 .diagram .dia{
+	position: absolute;
+	transform: translateX(0%);
+  opacity: 0;
+  transition: 1s;
+}
+
+.cont .cont_01 .diagram .dia.dia_01{
+  top: 542px;
+  left: 540px;
+}
+.cont .cont_01 .diagram .dia.dia_02{
+  top: 542px;
+  left: 804px;
+	animation-delay: 0.4s;
+}
+.cont .cont_01 .diagram .dia.dia_03{
+  top: 542px;
+  left: 1066px;
+	animation-delay: 0.8s;
+}
+
+
+.cont .cont_01 .dia.view{
+  animation: move 0.5s linear 0s;
+  animation-fill-mode: backwards;
+  opacity: 1;
+}
+.cont .cont_01 .dia_03.view{
+  animation: move 0.5s linear 0s;
+  animation-fill-mode: backwards;
+  opacity: 1;
+}
+
+@keyframes move{
+  from{
+      transform: translateX(-50%);
+      opacity: 0;
+  }
+  to{
+      transform: translateX(0%);
+      opacity: 1;
+  }
+}
+@keyframes rmove{
+  from{
+      transform: translateX(0%);
+      opacity: 1;
+  }
+  to{
+      transform: translateX(100%);
+      opacity: 1;
+  }
+}
+
+.arr{
+	position: absolute;
+	top: 671px;
+	right: 460px;
+	animation: go 1s linear infinite;
+	z-index: 100;
+}
+
+@keyframes go {
+  0% { transform: translateX(-300%); }
+  100% { transform: translateX(300%); }
+}
+
+.arr .u{
+	width: 4px;
+	height: 25px;
+	background-color: #000;
+	transform: rotate(-45deg) translate(-7px, 7px);
+}
+.arr .n{
+	width: 4px;
+	height: 25px;
+	background-color: #000;
+	transform: rotate(45deg);
 }

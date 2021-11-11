@@ -46,7 +46,19 @@
       <div class="intro"></div>
     </div>
     <div class="cont">
-      <img src="img/2.모바일_02.jpg" alt="">
+      <div class="cont_01">
+        <div class="diagram">
+          <img src="img/dia_01.png" alt="" class="dia dia_01">
+          <img src="img/dia_02.png" alt="" class="dia dia_02">
+          <img src="img/dia_03.png" alt="" class="dia dia_03">
+        </div>
+        <div class="arr">
+          <div class="u"></div>
+          <div class="n"></div>
+        </div>
+        <img src="img/2.모바일_02_2.jpg" alt="">
+      </div>
+
       <img src="img/2.모바일_03.jpg" alt="">
       <img src="img/2.모바일_04.jpg" alt="">
       <img src="img/2.모바일_05.jpg" alt="">
@@ -63,6 +75,62 @@
     //     alert("Image loaded.");
     //   });
     // });
+
+    $(function(){
+
+      // $("#menu").on("click",function(){
+      //
+      //    if($("#menu").hasClass("view")){
+      //       $(".sideMenu").removeClass("view");
+      //       $(".sideBG").removeClass("view");
+      //       $("#menu").removeClass("view");
+      //     }else{
+      //       $(".sideMenu").addClass("view");
+      //       $(".sideBG").addClass("view");
+      //       $("#menu").addClass("view");
+      //     }
+      // });
+
+      $(window).scroll(function(){
+          const top = $(this).scrollTop();
+          console.log(top);
+
+          if(top > 800){
+             $(".dia").addClass("view");
+          }
+          // if(top > 750){
+          //    $(".linear.type02").addClass("view");
+          // }
+          //
+          // if(top > 1150){
+          //    $(".linear.type03").addClass("view");
+          // }
+      })
+
+      const count = $(".slider .film").length;
+      let index = 0;
+
+      function move(){
+          const width = $(".slider").width();
+
+
+          index++;
+
+          if(index < count){
+          }else{
+              index = 0;
+          }
+
+          $(".slider .box").css("transform","translateX(-" + (index*width) + "px)");
+
+      }
+
+
+      setInterval(move, 3000);
+
+    });
+
+
   </script>
 
 </html>
