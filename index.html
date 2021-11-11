@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="js/script.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <style>
       @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Roboto:wght@100;300;400;500;700;900&display=swap');
     </style>
@@ -45,6 +46,7 @@
 
       <div class="intro"></div>
     </div>
+
     <div class="cont">
       <div class="cont_01">
         <div class="diagram">
@@ -58,16 +60,85 @@
         </div>
         <img src="img/2.모바일_02_2.jpg" alt="">
       </div>
+      <div class="cont_02">
+        <div class="wwrap cont-top">
+          <p>Background</p>
+          <p>02</p>
+        </div>
+        <!-- Swiper -->
+        <div class="swiper mySwiper">
+          <div class="swiper-pagination" id="swiper-pagination-me"></div>
+          <div class="swiper-bar"></div>
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><div class="add"><img src="img/cont02-add-001.png" alt=""></div><img src="img/cont02-001.png" alt=""></div>
+            <div class="swiper-slide"><img src="img/cont02-002.png" alt=""></div>
+            <div class="swiper-slide"><div class="add add2"><img src="img/cont02-add-003.png" alt=""></div><img src="img/cont02-003.png" alt=""></div>
+          </div>
+        </div>
+        <!-- <img src="img/2.모바일_03-05.jpg" alt=""> -->
+      </div>
+      <div class="cont_00 cont_03">
+        <div class="wwrap cont-top">
+          <p>Competitors Comparison</p>
+          <p>03</p>
+        </div>
+        <h2 class="wwrap cont_title">직방 VS 다방, <p>강점은 흡수&약점은 개선</p></h2>
+        <img src="img/cont03-001.png" alt="">
+      </div>
+      <!-- <img src="img/2.모바일_06.jpg" alt=""> -->
+      <!-- <img src="img/2.모바일_07.jpg" alt=""> -->
+      <!-- <img src="img/2.모바일_08.jpg" alt=""> -->
+      <!-- <img src="img/2.모바일_09.jpg" alt=""> -->
+      <div class="cont_00 cont_04">
+        <div class="wwrap cont-top">
+          <p>User research</p>
+          <p>04</p>
+        </div>
+        <img src="img/cont04-001.png" alt="">
+      </div>
+      <div class="cont_00 cont_05">
+        <div class="wwrap cont-top">
+          <p>Persona</p>
+          <p>05</p>
+        </div>
+        <h2 class="wwrap cont_title">직방의 <p>페르소나</p></h2>
+        <img src="img/cont05-001.png" alt="">
+      </div>
+      <div class="cont_00 cont_06">
+        <div class="wwrap cont-top">
+          <p>Journey map</p>
+          <p>06</p>
+        </div>
+        <img src="img/journeymap.png" alt="">
+      </div>
+      <div class="cont_00 cont_07">
+        <div class="wwrap cont-top">
+          <p>As is to be</p>
+          <p>07</p>
+        </div>
+        <img src="img/cont07-001.png" alt="">
+      </div>
 
-      <img src="img/2.모바일_03.jpg" alt="">
-      <img src="img/2.모바일_04.jpg" alt="">
-      <img src="img/2.모바일_05.jpg" alt="">
-      <img src="img/2.모바일_06.jpg" alt="">
     </div>
+
+
 
 
   </body>
   <script src="js/scrollbar.js"></script>
+  <!-- Swiper JS -->
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      direction: "vertical",
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    });
+  </script>
   <script>
 
     // $(document).ready(function(){
@@ -96,11 +167,26 @@
           console.log(top);
 
           if(top > 800){
-             $(".dia").addClass("view");
+            $(".dia").addClass("view");
           }
-          // if(top > 750){
-          //    $(".linear.type02").addClass("view");
-          // }
+          if(top > 1700){
+            $(".add img").addClass("on");
+          }
+          if(top > 2800){
+            $(".cont_03 img").addClass("on");
+          }
+          if(top > 3800){
+            $(".cont_04 img").addClass("on");
+          }
+          if(top > 4800){
+            $(".cont_05 img").addClass("on");
+          }
+          if(top > 5800){
+            $(".cont_06 img").addClass("on");
+          }
+          if(top > 6800){
+            $(".cont_07 img").addClass("on");
+          }
           //
           // if(top > 1150){
           //    $(".linear.type03").addClass("view");
