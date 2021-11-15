@@ -87,6 +87,7 @@
         </div>
         <img src="img/cont04-001.png" alt="">
       </div>
+
       <div class="cont_00 cont_05">
         <div class="wwrap cont-top">
           <p>Persona</p>
@@ -95,6 +96,7 @@
         <h2 class="wwrap cont_title beige">직방의 <p class="black">페르소나</p></h2>
         <img src="img/cont05-001.png" alt="">
       </div>
+
       <div class="cont_00 cont_06">
         <div class="wwrap cont-top">
           <p>Journey map</p>
@@ -102,6 +104,7 @@
         </div>
         <img src="img/journeymap.png" alt="">
       </div>
+
       <div class="cont_00 cont_07">
         <div class="wwrap cont-top">
           <p>As is to be</p>
@@ -109,6 +112,7 @@
         </div>
         <img src="img/cont07-001.png" alt="">
       </div>
+
       <div class="cont_00 cont_08">
         <div class="wwrap cont-top">
           <p>User Flow</p>
@@ -125,6 +129,7 @@
         </div>
         <!-- <img src="img/cont08-001.png" alt=""> -->
       </div>
+
       <div class="cont_00 cont_10">
         <div class="wwrap cont-top">
           <p>Style Guide</p>
@@ -141,6 +146,7 @@
           </div>
         </div>
       </div>
+
       <div class="cont_00 cont_11">
         <div class="wwrap cont-top">
           <p>Style Guide</p>
@@ -158,7 +164,18 @@
           <p>13</p>
         </div>
         <h2 class="wwrap cont_title beige">직방 <p class="black">온보딩</p></h2>
-        <img src="img/cont11-001.png" alt="">
+        <!-- <div class="wwrap phone">
+          <img src="img/main_phone.png" alt="" style="opacity: 1">
+        </div>
+        <div class="wwrap">
+          <div>
+            <img src="img/온보딩1.png" alt="" style="opacity: 1">
+            <img src="img/온보딩2.png" alt="" style="opacity: 1">
+            <img src="img/온보딩3.png" alt="" style="opacity: 1">
+            <img src="img/온보딩4.png" alt="" style="opacity: 1">
+          </div>
+        </div> -->
+        <img src="img/cont13-001.jpg" alt="">
       </div>
       <!-- <img src="img/2.모바일_17.jpg" alt=""> -->
 
@@ -213,18 +230,70 @@
       <!-- <img src="img/2.모바일_18.jpg" alt=""> -->
       <!-- <img src="img/2.모바일_19.jpg" alt=""> -->
 
-      <!-- <div class="cont_00 cont_15">
+      <div class="cont_00 cont_15">
         <div class="wwrap cont-top">
           <p>Map</p>
           <p>15</p>
         </div>
         <h2 class="wwrap cont_title">지도 위에서 <p class="yellow">한눈에</p></h2>
-        <img src="img/cont11-001.png" alt="">
+        <img src="img/phone_real.png" alt="" class="phone_real">
+        <div class="video">
+          <video autoplay="" muted="" loop="">
+              <source src="img/map.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="wwrap" style="z-index: 150">
+          <div class="explan">
+            <div class="text_box">
+              <h3 class="kr">매물 선택</h3>
+              <p class="kr">지도의 위치를 조정하여 매물의 양을 확인할 수 있으며 </br>지도에서 매물을 선택할 수 있습니다.</p>
+              <div class="bar_arr">
+                <div class="bbar"></div>
+                <div class="bbar_circle"></div>
+              </div>
+            </div>
+            <div class="text_box">
+              <h3 class="kr">추천매물</h3>
+              <p class="kr">필터를 설정하여 원하는 조건의 매물을</br> 찾을 수 있습니다.</br><b class="yellow">방 종류 / 거래유형 / 가격 / 층 수 / 주차대수 등 </b></p>
+              <div class="bar_arr">
+                <div class="bbar"></div>
+                <div class="bbar_circle"></div>
+              </div>
+            </div>
+            <div class="text_box">
+              <h3 class="kr">지도에서 </br>바로 선택 가능!</h3>
+              <div class="bar_arr">
+                <div class="bbar short"></div>
+                <div class="bbar long"></div>
+                <div class="bbar_circle"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <img src="img/cont15-001.png" alt="" class="top">
+        <img src="img/back_020.png" alt="">
+      </div>
+      <!-- <img src="img/2.모바일_20.jpg" alt=""> -->
+      <!-- <div class="cont_00 cont_16">
+        <div class="wwrap cont-top">
+          <p>Filter</p>
+          <p>16</p>
+        </div>
+        <h2 class="wwrap cont_title black">맞춤 필터</h2>
+        <img src="img/맞춤필터.jpg" alt="">
+        <div class="circle"><p>more detail,</br>more accurate</p></div>
       </div> -->
-      <img src="img/2.모바일_20.jpg" alt="">
-
-
       <img src="img/2.모바일_21.jpg" alt="">
+
+      <!-- <div class="cont_00 cont_17">
+        <div class="wwrap cont-top">
+          <p>Detail Page</p>
+          <p>17</p>
+        </div>
+        <h2 class="wwrap cont_title black">매물 정보</h2>
+        <img src="img/상세페이지.jpg" alt="">
+      </div> -->
+
       <img src="img/2.모바일_22.jpg" alt="">
       <img src="img/2.모바일_23.jpg" alt="">
       <img src="img/2.모바일_24.jpg" alt="">
@@ -314,8 +383,20 @@
           if(top > 12500){
             $(".cont_11 img").addClass("on");
           }
-          if(top > 10800){
+          if(top > 14600){
+            $(".cont_13 img").addClass("on");
+          }
+          if(top > 15800){
             $(".text_box").addClass("on");
+          }
+          if(top > 17800){
+            $(".cont_15 .top").addClass("on");
+          }
+          if(top > 18800){
+            $(".cont_16 img").addClass("on");
+          }
+          if(top > 18800){
+            $(".cont_17 img").addClass("on");
           }
       })
 
