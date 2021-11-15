@@ -602,12 +602,12 @@ div.swiper-pagination{
 }
 
 
-.cont_15{
+.cont_15, .cont_20{
 	position: relative;
 	background: #fff;
 	/* background: url(../img/back_020.png); */
 }
-.cont_15>img{
+.cont_15>img, .cont_20>img{
 	position: absolute;
   top: 0;
   left: 0;
@@ -620,13 +620,13 @@ div.swiper-pagination{
 	z-index: 90;
 	opacity: 0;
 }
-.cont_15 .phone_real{
+.cont_15 .phone_real, .cont_20 .phone_real{
 	top: 256px;
   left: 300px;
   z-index: 110;
   width: 357px;
 }
-.cont_15 .video{
+.cont_15 .video, .cont_20 .video{
 	width: 342px;
   position: absolute;
   height: 750px;
@@ -637,7 +637,7 @@ div.swiper-pagination{
   z-index: 100;
 }
 
-.cont_15 .video video{
+.cont_15 .video video, .cont_20 .video video{
 	width: 100%;
   border-radius: 20px;
   position: absolute;
@@ -744,9 +744,108 @@ div.swiper-pagination{
 	box-shadow: 12px 20px 15px #00000008;
 }
 
-.cont_18{}
-.cont_19{}
-.cont_20{}
+.cont_18{
+	position: relative;
+	background: url(../img/back_018.jpg);
+	height: 1300px;
+}
+.text_18{
+	text-align: left;
+	position: absolute;
+	top: 670px;
+	left: 770px;
+}
+.text_18 p{
+	font-size: 19px;
+	font-weight: 400;
+}
+.text_18 p b{
+	font-size: 19px;
+}
+.cont_18 .phone_real, .cont_18 .screen{
+	position: absolute;
+	top: 165px;
+	left: 15%;
+}
+.cont_18 img.phone_real{
+	z-index: 100;
+}
+.cont_18 img.screen{
+	/* top: 0px; */
+	width: 342px;
+	transform: translate(5px, 14px);
+	border-radius: 20px 20px 0 0;
+}
+
+.cont_19{
+	position: relative;
+	height: 1300px;
+}
+.cont_19 img{
+	top: -280px;
+}
+.text_19{
+	text-align: left;
+}
+.text_19 p{
+	font-size: 19px;
+	font-weight: 400;
+}
+.cont_20 .text_box{
+	z-index: 200;
+	width: 360px;
+}
+.cont_20 .text_box h3{
+	font-weight: 900;
+}
+.cont_20 .text_box:nth-child(1){
+	top: 700px;
+  left: 560px;
+}
+.cont_20 .text_box:nth-child(2){
+	text-align: left;
+	top: -80px;
+  left: 1130px;
+}
+.cont_20 .text_box p{
+	font-size: 16px;
+	font-weight: 500;
+}
+.cont_20 .text_box p b{ font-weight: 400}
+.cont_20 .bar_arr{ top: 50%; right: -100px}
+.cont_20 .text_box:nth-child(2) .bar_arr, .cont_15 .text_box:nth-child(3) .bar_arr{
+	left: -100px;
+	/* top: 13px; */
+}
+.cont_20 .text_box:nth-child(1) .bar_arr{	right: -100px}
+
+.cont_20 .bbar_circle{}
+.cont_20 .text_box:nth-child(1) .bbar_circle{
+	right: 0;
+	transform: translate(5px, -5px);
+}
+.cont_20 .text_box:nth-child(2) .bbar_circle{
+	left: 0;
+	transform: translate(-5px, -5px);
+}
+.back-top{
+	width: 100vw;
+	height: 540px;
+	background: #fcae27;
+	position: absolute;
+	top: 0;
+	z-index: -1;
+}
+.cont_20{
+	height: 1300px;
+	z-index: 1;
+}
+.cont_20 .wwrap{
+	z-index: 200;
+}
+.cont_20 .top{
+	z-index: 0;
+}
 
 .cont_end{
 	background: url(../img/2.모바일_28.jpg);
