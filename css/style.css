@@ -772,8 +772,8 @@ div.swiper-pagination{
 }
 .cont_18 img.screen{
 	/* top: 0px; */
-	width: 342px;
-	transform: translate(5px, 14px);
+	width: 340px;
+	transform: translate(7px, 11px);
 	border-radius: 20px 20px 0 0;
 }
 
@@ -846,7 +846,39 @@ div.swiper-pagination{
 .cont_20 .top{
 	z-index: 0;
 }
-
+.cont_21 {
+	position: relative;
+	background: #f6f5f0;
+}
+.cont_21 .cont-top{
+	display: block;
+}
+.cont_00.cont_21 img{
+	position: absolute;
+  top: 0;
+  left: 0;
+	/* top: -110px; */
+	z-index: 110;
+}
+.cont_21 .text_18{
+	top: 240px;
+	left: 1140px;
+}
+.cont_21 .text_18 p{
+	font-size: 19px;
+	font-weight: 500;
+	color: #232323;
+	margin-top: 20px;
+}
+.cont_21 .circle{
+	position: absolute;
+	top: 250px;
+	left: 320px;
+	background: #fcae27;
+	width: 740px;
+	height: 740px;
+	border-radius: 370px;
+}
 .cont_end{
 	background: url(../img/2.모바일_28.jpg);
 }
