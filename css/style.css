@@ -592,10 +592,21 @@ div.swiper-pagination{
 	left: 165px;
 }
 
+.cont_15.cont_152{
+	height: 2160px;
+}
+.cont_15.cont_152 .imgimg{
+	top: 470px;
+  left: 1285px;
+  box-shadow: 10px 10px 20px #00000020;
+	z-index: 110;
+}
+
 
 .cont_15, .cont_20{
 	position: relative;
 	background: #fff;
+	height: 1300px;
 	/* background: url(../img/back_020.png); */
 }
 .cont_15>img, .cont_20>img{
@@ -619,11 +630,11 @@ div.swiper-pagination{
 }
 .cont_15 .video, .cont_20 .video{
 	width: 342px;
-  position: absolute;
   height: 750px;
-  overflow: hidden;
-  top: 268px;
   border-radius: 15px;
+  overflow: hidden;
+	position: absolute;
+  top: 268px;
   left: 307px;
   z-index: 100;
 }
@@ -683,25 +694,88 @@ div.swiper-pagination{
 
 .cont_16{
 	position: relative;
-	background: #fff;
-	height: 2160px;
+	background: #f6f5f0;
+	height: 1080px;
 }
+.cont_16 .cont_left, .cont_16 .cont_right{
+	display: inline-block;
+	width: 49%;
+	height: 1080px;
+	position: relative;
+
+}
+.cont_16 .cont_left{}
+.cont_16 .cont_right{}
+
 .cont_16 .cont_title{
 	display: block;
 }
 .cont_16 img{
-	margin-top: 220px;
+	/* left: 500px; */
+	margin-top: -10px;
 	z-index: 100;
-	box-shadow: 12px 20px 15px #00000008;
+	/* box-shadow: 12px 20px 20px #00000020; */
+}
+
+.cont_16 .phone_real{
+	opacity: 1;
+	position: absolute;
+	/* top: 33px; */
+  /* left: 300px; */
+	top: 0%;
+  right: 10%;
+	/* transform: translate(-50%, -50%); */
+  z-index: 110;
+	box-shadow: 0px 0px 0px #00000000;
+	/* margin-top: 50px; */
+}
+.cont_16 .cont_left .phone_real{
+	transform: translate(-50%, 0%);
+}
+.cont_16 .cont_right .phone_real{
+	left: 10%;
+	/* transform: translate(-50%, -50%); */
+}
+
+.cont_16 .video{
+	width: 340px;
+  height: 754px;
+  border-radius: 15px;
+  overflow: hidden;
+	position: absolute;
+  /* top: 268px; */
+  /* left: 307px; */
+	top: 0%;
+  right: 10%;
+	/* transform: translate(-50%, -50%); */
+  z-index: 100;
+	/* margin-top: 50px; */
+	margin-top: 14px;
+  margin-left: 6px;
+}
+.cont_16 .cont_left .video{}
+.cont_16 .cont_right .video{
+	left: 10%;
+}
+
+.cont_16 .video video{
+	width: 100%;
+  border-radius: 20px;
+  position: absolute;
+  top: -32px;
+  right: 0;
 }
 
 .cont_16 .circle{
 	position: absolute;
   top: 0;
   left: 50%;
-  transform: translate(-50%, 250px);
-	width: 1000px;
-	height: 1000px;
+  /* transform: translate(-50%, 250px); */
+	/* width: 1000px; */
+	/* height: 1000px; */
+	transform: translate(-50%, 230px);
+	width: 700px;
+	height: 700px;
 	background: #fcae27;
 	border-radius: 500px;
 	animation: big 2s linear 1;
@@ -716,8 +790,10 @@ div.swiper-pagination{
 	font-weight: 900;
 	text-align: left;
 	position: absolute;
-	bottom: 130px;
-	right: 110px;
+	/* bottom: 130px; */
+	/* right: 110px; */
+	bottom: 140px;
+	right: 0px;
 }
 .cont_17{
 	background: #fcae27;
